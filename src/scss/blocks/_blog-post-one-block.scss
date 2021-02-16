@@ -1,0 +1,50 @@
+/* BLOG POST ONE BLOCK */
+/*
+<main class="has-title width-max">
+  <figure>
+    <img src="" alt="">
+    <figcaption class="wysiwyg">
+      *** WISYWIG
+    </figcaption>
+  </figure>
+</main>
+*/
+.blog-post-block {
+    h2 {
+      //padding-top: 5rem;
+      //padding-bottom: 2.5rem;
+    }
+    hr {
+      
+      width: 5%;
+      border-top: 2px solid $color-nax;
+     }
+  
+    main {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 25px;
+        grid-row-gap: 25px;
+      > .subtitle2 {
+        font-size: 1.1em;
+      }
+      > .abstract {
+        font-size: 1em;
+      }
+      > a {
+        text-decoration: none;
+      }
+      img {
+        max-width: 100%;      
+        //height: auto;
+        width: 100%;
+      }
+      .share-buttons {
+        > * {
+          display: inline-flex;
+        }
+      }
+    }
+  }
+  

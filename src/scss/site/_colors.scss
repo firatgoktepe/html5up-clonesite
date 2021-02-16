@@ -1,0 +1,164 @@
+/* COLORS */
+@mixin a-style {
+  a,
+  a:visited,
+  a:hover,
+  a:active {
+    @content;
+  }
+}
+@mixin text-color-style {
+  @content;
+  a,
+  a:visited,
+  a:hover,
+  a:active {
+    @content;
+  }
+}
+
+$color1: #00677f;
+$color2: #ddcba4;
+$color3: #9b2743;
+
+$color4: #745096;
+$color5: #505f98;
+$color6: #636a72;
+$color7: #272030;
+$color8: #DDDAFD;
+
+
+$color-light: #ffffff;
+$color-medium:#ededed;
+$color-dark: #333333;
+$color-nax: #9B2844;
+
+$border-color-light: #d1d1d1;
+$border-color-medium: #818a91;
+$border-color-dark: $color-dark;
+
+// colors
+.color1 {
+  @include text-color-style {
+    color: $color1;
+  }
+}
+.color2 {
+  @include text-color-style {
+    color: $color2;
+  }
+}
+.color3 {
+  @include text-color-style {
+    color: $color3;
+  }
+}
+.color-light {
+  @include text-color-style {
+    color: $color-light;
+  }
+}
+.color-medium {
+  @include text-color-style {
+    color: $color-medium;
+  }
+}
+.color-dark {
+  @include text-color-style {
+    color: $color-dark;
+  }
+}
+
+.color4 {
+  @include text-color-style {
+    color: $color4;
+  }
+}
+.color5 {
+  @include text-color-style {
+    color: $color5;
+  }
+}
+.color6 {
+  @include text-color-style {
+    color: $color6;
+  }
+}
+.color7 {
+  @include text-color-style {
+    color: $color7;
+  }
+}
+.color8 {
+  @include text-color-style {
+    color: $color8;
+  }
+}
+
+.background-color1 {
+  background-color: $color1;
+}
+.background-color2 {
+  background-color: $color2;
+}
+.background-color3 {
+  background-color: $color3;
+}
+.background-color-light {
+  background-color: $color-light;
+}
+.background-color-medium {
+  background-color: $color-medium;
+}
+.background-color-dark {
+  background-color: $color-dark;
+}
+.background-color4 {
+  background-color: $color4;
+}
+.background-color5 {
+  background-color: $color5;
+}
+.background-color6 {
+  background-color: $color6;
+}
+.background-color7 {
+  background-color: $color7;
+}
+.background-color8 {
+  background-color: $color8;
+}
+
+.border-color1 {
+  border-color: $color1;
+}
+.border-color2 {
+  border-color: $color2;
+}
+.border-color3 {
+  border-color: $color3;
+}
+.border-color-light {
+  border-color: $color-light;
+}
+.border-color-medium {
+  border-color: $color-medium;
+}
+.border-color-dark {
+  border-color: $color-dark;
+}
+.border-color4 {
+  border-color: $color4;
+}
+.border-color5 {
+  border-color: $color5;
+}
+.border-color6 {
+  border-color: $color6;
+}
+.border-color7 {
+  border-color: $color7;
+}
+.border-color8 {
+  border-color: $color8;
+}

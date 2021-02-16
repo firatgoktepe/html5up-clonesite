@@ -1,0 +1,126 @@
+/* HERO BLOCK */
+
+section.hero-block {
+  width: 100%;
+  position: relative;
+  @media (min-width: 500px){
+  margin-bottom: 6rem;
+  }
+  > figure {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    overflow: hidden;
+    left: unset;
+    right: unset;
+    top: unset;
+    bottom: unset;
+    //z-index: -1;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100%;
+  }
+  > header {
+    // text-shadow: -1px -1px 0.1em $color-dark, -1px 1px 0.1em $color-dark, 1px 1px 0.1em $color-dark,
+    //   1px -1px 0.1em $color-dark;
+    //color: $color-light;
+    border-bottom: solid 2px #e5e5e5;
+    box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #e5e5e5;
+
+    h1{
+      font-size: 2.45em;
+      font-family: $font-family-arvo;
+      font-weight: 700;
+      color: #ed786a;
+      text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
+      letter-spacing: 13px;
+    }
+    .subtitle1 {
+      font-size: 3.9em;
+    }
+      span {
+      //font-size: 1.45em;
+      color: $color4
+
+    }
+    .abstract {
+      font-size: 1.14em;
+    }
+      p{
+        font-family: $font-family-headers;
+        //font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.7;
+
+        text-transform: uppercase;
+        font-weight: 400;
+        color: #888;
+        margin: 2.5em 0 0 0;
+        font-size: 0.85em;
+        letter-spacing: 3px;
+        text-align: center;
+      }
+      a{
+        text-decoration: none;
+      }
+        .button-style{
+          text-transform: none;
+          border-radius: 1.625rem;
+        }
+          i{
+            padding-left: 5px;
+            padding-top: 3px;
+          }
+
+  }
+ footer.has-content{
+    a {
+      padding-right: 25vw;
+      padding-left: 18vw;
+    } 
+  }
+}
+section.hero-block.desktop {
+  > header {
+    padding-top: 14vh !important;
+    margin-right: 25vw;
+    margin-left: 18vw;
+  }
+}
+
+section.hero-block.mobil {
+  > header {
+    //padding-top: 50vh !important ;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 900px){
+  section.hero-block{
+  h1{
+    //font-size: 5em !important;
+  }
+  .subtitle1 {
+    font-size: 3.12em !important;
+  }
+    span {
+    font-size: 1.87rem !important;
+  }
+  .abstract {
+    font-size: 1.27em !important;
+  }
+ }
+}
+
+@media (min-width: 320px) and (max-width: 600px){
+  section.hero-block.desktop {
+    > header {
+      padding-top: 0vh !important;
+    }
+  }
+  section.hero-block {
+    > figure {
+      height: 100%;
+    }
+  }
+}
