@@ -64,8 +64,8 @@ function nax_register_post_type($cpt_name, $cpt_singular, $cpt_plural, $cpt_doma
 
 // // My Post Types News and Cases
 
-// nax_register_post_type('News', 'news', 'News', 'html5up-1', 'dashicons-admin-site-alt');
-// nax_register_post_type('Cases', 'case', 'Cases', 'html5up-1', 'dashicons-admin-site-alt3');
+//nax_register_post_type('News', 'news', 'News', 'html5up-1', 'dashicons-admin-site-alt');
+//nax_register_post_type('Cases', 'case', 'Cases', 'html5up-1', 'dashicons-admin-site-alt3');
 
 
 
@@ -289,6 +289,7 @@ function taxonomy_labels($plural, $single)
     );
 }
 
+
 function nax_register_taxonomy($taxonomy)
 {
     foreach ($taxonomy as $name => $data) {
@@ -326,7 +327,13 @@ function nax_register_taxonomy($taxonomy)
             }
         }
     }
+
 }
+
+// My Custom Taxonomy called 'Turler' (seen as Genres inside Posts WP dashboard)
+
+//nax_register_taxonomy( [ 'turler' => [ 'singular' => 'genre', 'plural' => 'Genres', 'post_types' => 'post', 'terms' => [] ] ] );
+
 
 /*
 Add ACF Fields to Quick Edit
