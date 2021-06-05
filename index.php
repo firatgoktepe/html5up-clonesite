@@ -24,7 +24,6 @@ get_header();
 	<p>template indexxxxxx</p>
 </main>
 
-
 <?php
 
 get_footer();
