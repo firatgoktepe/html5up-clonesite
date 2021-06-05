@@ -135,7 +135,13 @@ add_action('admin_menu', 'wpdocs_remove_menus');
 
 //     $block_names_to_remove = array();
 //     foreach ($registered_blocks as $block) {
-//         if (startsWith($block->name, 'core')) {
+//         if (startsWith($block->category, 'widgets')) {
+//             array_push($block_names_to_remove, $block->name);
+//         }
+//     }
+
+//     foreach ($registered_blocks as $block) {
+//         if (startsWith($block->category, 'media')) {
 //             array_push($block_names_to_remove, $block->name);
 //         }
 //     }
