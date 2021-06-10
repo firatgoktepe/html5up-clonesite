@@ -20,7 +20,6 @@
   </main>
 <?php endwhile; ?>
 
-Template page.php
 <?php
 /*
 
