@@ -17,7 +17,7 @@ get_header();
 <main id="site-main" class="page-<?php the_ID(); ?> <?php the_device_type(); ?>">
     <?php the_content(); ?>
 </main>
-template 404
+
 <?php
 
 get_footer();
