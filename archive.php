@@ -40,7 +40,6 @@ get_header();
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-template archive
 <?php
 get_footer();
 
