@@ -20,8 +20,6 @@
   </main>
 <?php endwhile; ?>
 
-
-Template single.php
 <?php
 /*
 
